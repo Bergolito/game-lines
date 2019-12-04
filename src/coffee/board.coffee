@@ -1,8 +1,7 @@
 class Board
 
-  COLORS = ["circle-red", "circle-green", "circle-blue", "circle-yellow"]
+  COLORS = ["circle-red", "circle-green", "circle-blue", "circle-yellow", "circle-orange"]
 
-  #constructor : (@scoreboard, @w = 6, @h = 6, @newCirclesNum = 3, @lineLength = 4) ->
   constructor : (@scoreboard, @w = 9, @h = 9, @newCirclesNum = 3, @lineLength = 5) ->
 
     addCell = (rowElement, cell) ->
@@ -45,6 +44,7 @@ class Board
       randomColor = COLORS[randomColorIndex]
       # Put the circle into the cell.
       randomCell.show randomColor, true
+      console.log('Novas bolas=',randomCellIndex,randomColor)
     @removeLines()
       
   removeLines : () ->

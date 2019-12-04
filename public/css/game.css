@@ -15,7 +15,7 @@ body {
   font-size: 24px;
 }
 #board {
-  margin: 50px;
+  margin: 0px;
   padding: 0px 10px;
   border-spacing: 0;
 }
@@ -70,8 +70,8 @@ body {
   height: 42px;
   border-radius: 50%;
   margin: 5px;
-  background-image: -webkit-radial-gradient(35% 35%, circle cover, #FFA500 5%, #FFA500 50%);
-  background-image: -moz-radial-gradient(35% 35%, circle cover, #FFA500 5%, #FFA500 50%);
+  background-image: -webkit-radial-gradient(35% 35%, circle cover, #fff 5%, #FFA500 50%);
+  background-image: -moz-radial-gradient(35% 35%, circle cover, #fff 5%, #FFA500 50%);
 }
 
 .circle-jump {

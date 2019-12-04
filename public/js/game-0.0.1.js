@@ -12,14 +12,8 @@
       this.scoreboard = scoreboard;
       this.w = w != null ? w : 6;
       this.h = h != null ? h : 6;
-
-      //this.w = w != null ? w : 9;
-      //this.h = h != null ? h : 9;
-
       this.newCirclesNum = newCirclesNum != null ? newCirclesNum : 3;
       this.lineLength = lineLength != null ? lineLength : 4;
-      //this.lineLength = lineLength != null ? lineLength : 5;
-      
       addCell = function(rowElement, cell) {
         var cellElement,
           _this = this;
@@ -323,8 +317,7 @@
 
   })();
 
-  //window.onload = function() {
-  window.onload() = function() {
+  window.onload = function() {
     var board, scoreboard;
     scoreboard = new Scoreboard;
     document.getElementById("scoreboard").appendChild(scoreboard.getElement());
